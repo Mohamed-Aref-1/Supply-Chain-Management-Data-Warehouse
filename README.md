@@ -89,4 +89,4 @@ Feel free to contribute to this project by submitting issues or pull requests. P
 
 ## Contact
 
-For any questions or feedback, please contact [mohamedare2003@gmail.com](mailto:mohamedare2003@gmail.com).
+For any questions or feedback, please contact [mohamed.aref@ejust.edu.eg](mailto:mohamed.aref@ejust.edu.eg).
