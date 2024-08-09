@@ -35,7 +35,7 @@ This project involves creating a database schema for a warehouse and shipping ma
 
 ```sh
 git clone https://github.com/Mohamed-Aref-1/Supply-Chain-Management-Data-Warehouse.git
-
+```
 ### Set Up the Database
 
 1. Open SQL Server Management Studio (SSMS).
