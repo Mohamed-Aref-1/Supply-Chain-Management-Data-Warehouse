@@ -61,10 +61,27 @@ git clone https://github.com/Mohamed-Aref-1/Supply-Chain-Management-Data-Warehou
 - Update the `Shipments` table using the provided stored procedure to test historical tracking and audit features.
 
 ## Files
+## Files
 
-- **`SchemaAndSampleData.sql`**: Creates tables and inserts sample data.
-- **`ShippingAnalysis.sql`**: Contains scripts for data analysis and reporting.
-- **`AuditTrigger.sql`**: Implements an audit trigger for tracking shipment record changes.
+- **`SchemaAndSampleData.sql`**: 
+  - Creates the database schema including tables for `Shipments`, `Products`, `Suppliers`, `Warehouses`, `Orders`, and `Time`.
+  - Establishes foreign key relationships between tables.
+  - Inserts initial sample data into all tables to facilitate testing and analysis.
+
+- **`ShippingAnalysis.sql`**: 
+  - Contains scripts for analyzing shipping efficiency, such as:
+    - Reporting total shipment values by supplier.
+    - Retrieving top products by shipment quantities.
+    - Providing the distribution of shipment values by product category.
+  - Includes queries to generate reports on consolidated shipment and product performance.
+  - Identifies suppliers with significant changes in shipment values compared to the previous year.
+
+- **`AuditTrigger.sql`**: 
+  - Implements a trigger for the `Shipments` table that:
+    - Tracks historical changes to shipment records.
+    - Records old and new quantities, along with the modification date and the user who made the change.
+    - Inserts these records into an audit table to maintain a history of changes.
+
 
 ## Contributing
 
